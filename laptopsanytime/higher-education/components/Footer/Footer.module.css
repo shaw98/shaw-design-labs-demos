@@ -1,0 +1,51 @@
+.footer {
+  background: var(--color-navy);
+  color: #fff;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.columns {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.heading {
+  color: var(--color-teal);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: var(--font-weight-light);
+}
+
+.list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: var(--color-teal);
+}
+
+.company {
+  font-weight: var(--font-weight-heavy);
+  font-family: var(--font-heading);
+}
+
+.copyright {
+  max-width: var(--max-content-width);
+  margin: 2rem auto 0;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-light);
+  opacity: 0.8;
+}

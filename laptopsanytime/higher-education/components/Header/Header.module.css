@@ -1,0 +1,65 @@
+.header {
+  background: var(--color-navy);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+}
+
+.topRow {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.logoLink {
+  display: inline-flex;
+}
+
+.utility {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phone {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heavy);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.loginButton {
+  background: #6b7a89;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.35rem 0.9rem;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heavy);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.nav {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heavy);
+  font-size: 0.75rem;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.navLink:hover {
+  color: var(--color-teal);
+}

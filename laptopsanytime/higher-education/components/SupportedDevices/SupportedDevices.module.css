@@ -1,0 +1,59 @@
+.section {
+  background: var(--color-band-pale-blue);
+  padding: 3rem 1.5rem;
+}
+
+.heading {
+  color: var(--color-navy);
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  list-style: none;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  max-width: var(--max-content-width);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.primary {
+  border: 2px solid var(--color-orange);
+}
+
+.cardTitle {
+  color: var(--color-navy);
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.cardBody {
+  font-weight: var(--font-weight-light);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.qualifier {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: var(--font-weight-light);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

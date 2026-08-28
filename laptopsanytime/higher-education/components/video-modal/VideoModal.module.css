@@ -1,0 +1,69 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 46, 85, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 720px;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--color-navy);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heavy);
+  cursor: pointer;
+}
+
+.title {
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+  padding-right: 6rem;
+}
+
+.subtitle {
+  font-weight: var(--font-weight-light);
+  margin: 0 0 1rem;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+.processSteps {
+  margin-top: 1rem;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heavy);
+  color: var(--color-magenta);
+  text-align: center;
+}

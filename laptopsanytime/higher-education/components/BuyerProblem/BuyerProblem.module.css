@@ -1,0 +1,22 @@
+.section {
+  background: var(--color-band-gray);
+  padding: 3rem 1.5rem;
+}
+
+.inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  color: var(--color-navy);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-weight: var(--font-weight-light);
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}

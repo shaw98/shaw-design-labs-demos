@@ -1,0 +1,94 @@
+.panel {
+  position: fixed;
+  top: 6rem;
+  right: 1.25rem;
+  width: 240px;
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+  background: #1e1e1e;
+  color: #eaeaea;
+  border-radius: 8px;
+  padding: 0.85rem;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.78rem;
+  z-index: 1050;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #fff;
+}
+
+.collapseButton,
+.collapsedTab {
+  background: #333;
+  color: #d4d4d4;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.collapseButton {
+  padding: 0.2rem 0.5rem;
+  flex-shrink: 0;
+}
+
+.collapsedTab {
+  position: fixed;
+  top: 6rem;
+  right: 1.25rem;
+  z-index: 1050;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.list {
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer {
+  margin: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid #444;
+  line-height: 1.4;
+  color: #aaa;
+}
+
+@media (max-width: 640px) {
+  /* Expanded panel: only reachable by explicitly tapping the collapsed tab
+     (the panel starts collapsed on mobile), so it's safe for it to take the
+     full-width bottom sheet here — the user asked for it. */
+  .panel {
+    top: auto;
+    bottom: 4.5rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+  }
+
+  /* Collapsed tab: stays a small, compact chip near the AEO Demo toggle
+     rather than a full-width bar, so it never sits on top of page content
+     or the active annotation's explanation card (which uses the same
+     bottom-sheet region while AEO mode is on). */
+  .collapsedTab {
+    top: auto;
+    bottom: 4.5rem;
+  }
+}

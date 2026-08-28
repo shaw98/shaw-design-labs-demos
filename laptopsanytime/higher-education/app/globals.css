@@ -1,0 +1,74 @@
+:root {
+  --color-navy: #002e55;
+  --color-orange: #f96811;
+  --color-gold: #ebd517;
+  --color-teal: #90ddd1;
+  --color-magenta: #a647a3;
+  --color-hero-blue: #005daa;
+  --color-band-gray: #b8c4ca;
+  --color-band-pale-blue: #ddebf3;
+  --color-ink: #1a1a1a;
+  --font-heading: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-body: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-weight-heavy: 800;
+  --font-weight-light: 300;
+  --max-content-width: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-light);
+  color: var(--color-ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heavy);
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-hero-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

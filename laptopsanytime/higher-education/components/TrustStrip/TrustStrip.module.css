@@ -1,0 +1,36 @@
+.section {
+  background: #fff;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.1rem;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: var(--max-content-width);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 160px;
+}
+
+.caption {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-light);
+  margin: 0;
+}
